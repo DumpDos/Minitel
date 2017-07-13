@@ -22,8 +22,11 @@ void setup() {
 void loop() {
 
   m.clearScreen();
-  m.pixelate();  
+  m.pixelate();
+  
   m.graphicMode();
+  
+// logo
 
   m.graphic("000001", 1, 1);
   m.graphic("011000", 2, 1);
@@ -56,7 +59,7 @@ void loop() {
   m.graphic("001100", 4, 5);
   m.graphic("011000", 5, 5);
 
-  
+// Display
   
   m.textMode();
   m.invertVideo();
@@ -92,10 +95,8 @@ void loop() {
   m.text(" Correc.", 33, 20);
   m.text(" Guide  ", 33, 21);
   m.text(" Envoi  ", 33, 22);
-  m.standardVideo();
 
   m.bip(10000);
-  m.textColor(WHITE);
   
   m.moveCursorTo(13, 5);
   m.cursor();
