@@ -29,35 +29,36 @@ void loop() {
   m.pixelate();
   
   m.graphic("000001", 1, 1);
-  m.graphic("011000", 2, 1);
-  m.graphic("110000", 3, 1);
-  m.graphic("110000", 4, 1);
-  m.graphic("101101", 5, 1);
-  m.graphic("000010", 6, 1);
-
+  m.graphic("011000");
+  m.graphic("110000");
+  m.graphic("110000");
+  m.graphic("101101");
+  m.graphic("000010");
   m.graphic("100010", 1, 2);
-  m.graphic("000110", 3, 2);
-  m.graphic("000110", 4, 2);
-  m.graphic("000110", 5, 2);
-  m.graphic("000110", 6, 2);
-
+  m.graphic("000000");
+  m.graphic("000110");
+  m.graphic("000110");
+  m.graphic("000110");
+  m.graphic("000110");
   m.graphic("000001", 1, 3);
-  m.graphic("011001", 2, 3);
-  m.graphic("011001", 3, 3);
-  m.graphic("011001", 4, 3);
-  m.graphic("011000", 5, 3);
-  m.graphic("000001", 6, 3);
+  m.graphic("011001");
+  m.graphic("011001");
+  m.graphic("011001");
+  m.graphic("011000");
+  m.graphic("000001");
 
   m.graphic("100001", 1, 4);
-  m.graphic("100010", 2, 4);
-  m.graphic("100000", 3, 4);
-  m.graphic("100000", 4, 4);
-  m.graphic("000110", 6, 4);
+  m.graphic("100010");
+  m.graphic("100000");
+  m.graphic("100000");
+  m.graphic("000000");
+  m.graphic("000110");
 
-  m.graphic("110100", 2, 5);
-  m.graphic("001100", 3, 5);
-  m.graphic("001100", 4, 5);
-  m.graphic("011000", 5, 5);
+  m.graphic("000000", 1, 5);
+  m.graphic("110100");
+  m.graphic("001100");
+  m.graphic("001100");
+  m.graphic("011000");
   
   m.noPixelate();
   
