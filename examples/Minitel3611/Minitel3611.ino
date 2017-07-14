@@ -19,6 +19,10 @@ Minitel m;
 void setup() {
 }
 
+void dots(int x, int y, int w) {
+  m.text(".", x, y);
+  m.repeat(w);
+}
 void loop() {
 
   m.clearScreen();
@@ -91,18 +95,26 @@ void loop() {
   m.textMode();
   
   m.bgColor(BLACK);
-  m.text("NOM:...........................", 9, 5);
-  m.text("ou  ...........................", 9, 6);
-  m.text("RUBRIQUE:...........................", 4, 7);
-  m.text("...........................", 13, 8);
-  m.text("...........................", 13, 9);
-  m.text("LOCALITE:...........................", 4, 10);
-  m.text("...........................", 13, 11);
+  m.text("NOM:", 9, 5);
+  dots( 13, 5, 26);
+  m.text("ou", 9, 6);
+  dots( 13, 6, 26);
+  m.text("RUBRIQUE:", 4, 7);
+  dots( 13, 7, 26);
+  dots( 13, 8, 26);
+  dots( 13, 9, 26);
+  m.text("LOCALITE:", 4, 10);
+  dots( 13, 10, 26);
+  dots( 13, 11, 26);
   m.text("vous pouvez préciser", 13, 12);
-  m.text("DEPARTEMENT:...........................", 1, 13);
-  m.text("ADRESSE:...........................", 5, 14);
-  m.text("PRENOM:...........................", 6, 15);
-  m.text("________________________________________", 1, 16);
+  m.text("DEPARTEMENT:", 1, 13);
+  dots( 13, 13, 26);
+  m.text("ADRESSE:", 5, 14);
+  dots( 13, 14, 26);
+  m.text("PRENOM:", 6, 15);
+  dots( 13, 15, 26);
+  m.text("_", 1, 16);
+  m.repeat(39);
   m.text("ligne suivante", 18, 18);
   m.text("ligne précédente", 16, 19);
   m.text("effacer", 25, 20);
