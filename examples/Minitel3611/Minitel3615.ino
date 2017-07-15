@@ -24,6 +24,11 @@ void dots(int x, int y, int w) {
   m.repeat(w);
 }
 
+void graph(int x, int y, int w) {
+  m.graphic("111111", x, y);
+  m.repeat(w);
+}
+
 void loop() {
 
   m.clearScreen();
